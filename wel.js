@@ -3,9 +3,9 @@ let HH = document.getElementById("HH")
 let MM = document.getElementById("MM")
 let SS = document.getElementById("SS")
 let bn = document.getElementById("btn1")
-var d1 = 4;
-var h1 = 02;
-var m1 = 01;
+var d1 = 21;
+var h1 = 12;
+var m1 = 0;
 var s1 = 0;
 clr = setInterval(function () {
     let a = new Date();
@@ -16,7 +16,7 @@ clr = setInterval(function () {
     let s = a.getSeconds();
     let dt = a.toLocaleString();
     console.log(dt)
-    fixedDate = "12/4/2022, 2:01:00 PM"
+    fixedDate = "12/21/2022, 12:00:00 AM"
 
 
     days = Math.abs(d1 - d);
