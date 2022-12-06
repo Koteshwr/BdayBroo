@@ -4,7 +4,8 @@ let MM = document.getElementById("MM")
 let SS = document.getElementById("SS")
 let bn = document.getElementById("btn1")
 fixedDate = "12/21/2022";
-
+let song = new Audio("audio/hbday.mp3");
+song.play();
 let a1 = new Date();
 let music = new Audio("audio/audo1.mp3")
 var d1 = 20;
