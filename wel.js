@@ -4,10 +4,10 @@ let MM = document.getElementById("MM")
 let SS = document.getElementById("SS")
 let bn = document.getElementById("btn1")
 fixedDate = "12/21/2022";
-let song = new Audio("audio/hbday.mp3");
+let song = new Audio("https://res.cloudinary.com/dlj5s1kn2/video/upload/v1670329019/hbday_zh6has.mp3");
 song.play();
 let a1 = new Date();
-let music = new Audio("audio/audo1.mp3")
+let music = new Audio("https://res.cloudinary.com/dlj5s1kn2/video/upload/v1670329028/audo1_qq6pzm.mp3")
 var d1 = 20;
 var h1 = 12;
 var m1 = 00;
