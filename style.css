@@ -61,15 +61,14 @@ body{
     border: 2px solid white;
     border-radius: 8px;
 }
- .textcontent{
-        display: flex;
-        justify-content: center;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 20px;
-        margin-top: 20%;
-        text-align: center;
-    }
-
+.textcontent{
+    display: flex;
+    justify-content: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    margin-top: 10%;
+    text-align: center;
+}
 @media only screen and (max-width: 500px)
 
 {
@@ -103,13 +102,13 @@ body{
         justify-content: center;
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 20px;
-        margin-top: 35%;
+        margin-top: 40%;
         text-align: center;
     }
     #btn button{
     
         font-size: 20px;
-        padding: 0px 20px;
+    padding: 0px 20px;
         background-color:transparent;
         
     }
