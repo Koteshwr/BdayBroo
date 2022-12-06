@@ -29,7 +29,7 @@ if (a1.toLocaleDateString()!=fixedDate && currentdate<=d1) {
 
         days = Math.abs(d1 - d);
         days = (days).toString().padStart(2, 0);
-        hh = Math.abs(h1 - h % 12);
+        hh = (Math.abs(h1 - h % 12)+12)%24;
         hh = (hh).toString().padStart(2, 0);
         if (m1 == 0) {
             mm = (60 - Math.abs(m1 - m)) % 60 - 1;
@@ -61,7 +61,7 @@ if (a1.toLocaleDateString()!=fixedDate && currentdate<=d1) {
 }
 else {
     console.log("executing this...")
-    bn.style.background = "green"
+    bn.innerHTML="Click Me"
     bn.addEventListener("click", function () {
         music.play()
         window.open("https://youtu.be/XcpNJHZAiuM")
