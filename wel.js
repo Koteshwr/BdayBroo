@@ -1,14 +1,20 @@
+let mainpage = document.getElementById("maincon")
+let wpage = document.getElementById("welcomepage")
+
+let img = document.getElementById("image")
+img.addEventListener('click',function(){
+    mainpage.style.display="none"
+    wpage.style.visibility="visible"
+    let s = document.getElementById("song")
+    s.play()
+})
 let day = document.getElementById("day")
 let HH = document.getElementById("HH")
 let MM = document.getElementById("MM")
 let SS = document.getElementById("SS")
 let bn = document.getElementById("btn1")
 fixedDate = "12/21/2022";
-function play1(){
-    let s = document.getElementById("song")
-    s.play()
-}
-play1();
+
 let a1 = new Date();
 let music = new Audio("https://res.cloudinary.com/dlj5s1kn2/video/upload/v1670329028/audo1_qq6pzm.mp3")
 var d1 = 20;
