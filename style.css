@@ -24,6 +24,7 @@
 
 #welcomepage {
     visibility: collapse;
+    height: 20px;
 }
 
 .head {
@@ -117,9 +118,134 @@ td {
 
 
 
+/* styling for rotating cube */
+#wrapper{
+    visibility: hidden;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+    .cube-wrap {
+    width: 400px;
+    height: 400px;
+    perspective: 2000px;
+    perspective-origin: 50% -500px;
+    }
+    .single-box {
+    background-size: cover;
+    display: block;
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    background-color: #60c2ef;
+    transform: rotateY(45deg) translateZ(-200px) rotateX(15deg);
+    transform-origin: 50% 50% 0;
+    border: 3px solid #fff;
+    }
+    .box {
+    transform-style: preserve-3d;
+    animation: rotate 10s infinite linear;
+    }
+    .side-front { 
+    transform: translateZ(180px);
+    background-color: transparent;
+    }
+    .side-back { 
+    background-color: transparent;
+    transform: rotateY(180deg) translateZ(180px);
+    }
+    .side-top {
+    border: 0px;
+    background-color: transparent;
+    transform: rotateX(90deg) translateZ(180px);
+    }
+    .side-bottom { 
+    border: 0px;
+    transform: rotateX(-90deg) translateZ(180px); 
+    background-color: transparent;
+    }
+    .side-left { 
+    background-color: transparent;
+    transform: rotateY(-90deg) translateZ(180px); 
+    }
+    .side-right { 
+    background-color: transparent;
+    transform: rotateY(90deg) translateZ(180px); 
+    }
+     
+    @keyframes rotate {
+    0% { transform: rotateY(0); }
+         
+    100% { transform: rotateY(360deg); }
+    }
+.side-front{
+    border-radius: 5px;
+    background-image: url("images/main1-removebg-preview.png");
+    background-size: cover;
+}
+.side-back{
+    border-radius: 5px;
+    background-size: cover;
+    background-image: url("images/main2-removebg.png");
+    
+}
+.side-left{
+    background-image: url("images/main3-removebg-preview.png");
+    border-radius: 5px;
+    background-size: cover;
+
+}
+.side-right{
+    border-radius: 5px;
+    background-size: cover;
+    background-image: url("images/main4-removebg-preview.png");
+
+}
 
 
 
+
+.single-box {
+    width: 250px;
+    height: 250px;
+    }
+
+
+
+
+    /* styling for surprisetext */
+    .surprise{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .surprise a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 4px;
+        animation: zoomanime 0.5s infinite both alternate;
+
+   }
+    .surprise a:hover{
+        border: 2px solid blue;
+        color: blue;
+    }
+
+
+@keyframes zoomanime{
+    from{
+        padding: 6px;
+    }
+    to{
+        padding: 10px;
+    }
+}
 
 
 
@@ -175,4 +301,18 @@ td {
         background-color: transparent;
 
     }
+    
+#welcomepage {
+    visibility: collapse;
+    height: 20px;
+}
+
+    /* styling for cube */
+    #wrapper{
+        visibility: collapse;
+    }
+    .single-box {
+        width: 250px;
+        height: 250px;
+        }
 }
