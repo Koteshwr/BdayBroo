@@ -5,9 +5,20 @@ let img = document.getElementById("image")
 img.addEventListener('click',function(){
     mainpage.style.display="none"
     wpage.style.visibility="visible"
-    let s = document.getElementById("song")
+    document.getElementById("surprise").style.display="none";
+    let s = document.getElementById("song1")
     s.play()
 })
+
+let spr = document.getElementById("surprise")
+spr.addEventListener('click',function(){
+    mainpage.style.display="none"
+    document.getElementById("wrapper").style.visibility="visible"
+    document.getElementById("surprise").style.display="none";
+    let s = document.getElementById("song2")
+    s.play()
+})
+
 let day = document.getElementById("day")
 let HH = document.getElementById("HH")
 let MM = document.getElementById("MM")
