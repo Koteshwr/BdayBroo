@@ -183,17 +183,17 @@ td {
     }
 .side-front{
     border-radius: 5px;
-    background-image: url("images/main1-removebg-preview.png");
+    background-image: url("https://res.cloudinary.com/dlj5s1kn2/image/upload/v1670937482/main1-removebg-preview_isoses.png");
     background-size: cover;
 }
 .side-back{
     border-radius: 5px;
     background-size: cover;
-    background-image: url("images/main2-removebg.png");
+    background-image: url("https://res.cloudinary.com/dlj5s1kn2/image/upload/v1670937489/main2-removebg_cnpblv.png");
     
 }
 .side-left{
-    background-image: url("images/main3-removebg-preview.png");
+    background-image: url("https://res.cloudinary.com/dlj5s1kn2/image/upload/v1670937476/main3-removebg-preview_lodbkk.png");
     border-radius: 5px;
     background-size: cover;
 
@@ -201,7 +201,7 @@ td {
 .side-right{
     border-radius: 5px;
     background-size: cover;
-    background-image: url("images/main4-removebg-preview.png");
+    background-image: url("https://res.cloudinary.com/dlj5s1kn2/image/upload/v1670937491/main4-removebg-preview_wua3mq.png");
 
 }
 
