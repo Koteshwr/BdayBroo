@@ -50,7 +50,7 @@ if (a1.toLocaleDateString()!=fixedDate && currentdate<=d1) {
 
         days = Math.abs(d1 - d);
         days = (days).toString().padStart(2, 0);
-        hh = Math.abs(12 - h);
+        hh = Math.abs(23 - h);
         hh = (hh).toString().padStart(2, 0);
         if (m1 == 0) {
             mm = (60 - Math.abs(m1 - m)) % 60 - 1;
