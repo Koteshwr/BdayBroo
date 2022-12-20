@@ -24,7 +24,7 @@ let HH = document.getElementById("HH")
 let MM = document.getElementById("MM")
 let SS = document.getElementById("SS")
 let bn = document.getElementById("btn1")
-fixedDate = "12/21/2022";
+fixedDate = "12/20/2022";
 
 let a1 = new Date();
 let music = new Audio("https://res.cloudinary.com/dlj5s1kn2/video/upload/v1670329028/audo1_qq6pzm.mp3")
@@ -73,7 +73,7 @@ if (a1.toLocaleDateString()!=fixedDate && currentdate<=d1) {
             bn.style.background = "green"
             bn.addEventListener("click", function () {
                 music.play()
-                window.open("https://youtu.be/XcpNJHZAiuM")
+                window.open("/nextpage.html")
             })
             clearInterval(clr)
         }
